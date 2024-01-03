@@ -156,6 +156,7 @@ form {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
+
 }
 
 .wig-img {
@@ -264,9 +265,10 @@ transition: 2ms;
     font-size: 1em;
   }
   /*  wigs mobile view */
-  .wg {
+  .wg{
     width: 100%;
     margin: 0 auto;
+
   }
   .wig-img {
     width: 100%;
@@ -276,12 +278,16 @@ transition: 2ms;
   .wigs-container {
     padding: 1rem;
     margin: 0 auto;
+
   }
 
   .wig {
     flex: 0 0 100%;
     width: 90%;
-    height: 86vh;
+    height: 80vh;
     margin-bottom: 1rem;
+  }
+  .add-to-cart {
+  margin-bottom: 0;
   }
 }

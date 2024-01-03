@@ -7,6 +7,7 @@ import Hero from './Hero'
 import { useCart } from 'react-use-cart'
 import { toast } from 'react-toastify'
 
+
 export default function Home({ user, setUser }) {
   const { items } = useCart()
   const [wigsData, setWigsData] = useState([])
@@ -27,7 +28,7 @@ export default function Home({ user, setUser }) {
     }
 
     fetchData()
-  }, []) // Run the effect once when the component mounts
+  }, []) 
 
   return (
     <>
