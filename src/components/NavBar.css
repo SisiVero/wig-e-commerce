@@ -1,0 +1,133 @@
+nav ul li a {
+  text-decoration: none;
+  color: #383838;
+  margin: 0;
+}
+.nav-bar-list {
+  color: red;
+}
+.nav-bar-icon {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+nav ul li {
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav a.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+.cart-icon-cont {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.2em;
+  color: #383838;
+}
+
+.cart-number {
+  color: rgb(255, 100, 100);
+  font-weight: bold;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  nav.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 1.2rem;
+    position: sticky;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    color: #1b1a1a;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #01368b;
+    border-radius: 0.5rem;
+    z-index: 1;
+    flex-direction: column;
+    width: 40%;
+    padding: 1rem 0.4rem;
+  }
+  nav ul li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+  }
+  nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.4rem;
+  }
+
+  nav ul.open {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .icon-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart-icon {
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  nav a.active {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .cart-icon.active {
+    color: #fff;
+    font-size: 1.6em;
+  }
+}

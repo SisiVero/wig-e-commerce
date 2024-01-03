@@ -1,0 +1,93 @@
+.signin-cont {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10rem auto 2rem auto;
+  width: 40%;
+  border-radius: 0.5rem;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+
+.signin-form label {
+  font-size: 1.2em;
+  color: #333333;
+  margin: 0;
+}
+
+.signin-form input {
+  margin: 0.3rem 0;
+  height: 2rem;
+  border-radius: 0.2rem;
+}
+
+.signin-cont .signin-form input:focus {
+  outline: 1px solid #ccc;
+}
+
+.signin-form input {
+  height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(155, 152, 152);
+  width: 100%;
+  margin: 0.3rem 0 1rem 0;
+  padding-left: 0.3rem;
+  transition: border-color 0.3s;
+}
+
+.signin-btn {
+  background-color: rgb(46, 45, 45);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.signup-link {
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.f-password {
+  text-align: right;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 0 0 1rem;
+}
+
+/*  MOBILE SCREEN CSS */
+
+@media only screen and (max-width: 767px) {
+.signin-cont{
+  margin: 2rem auto;
+  width: 90%;
+  height: 80vh;
+}
+.welcome{
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+}
+.signin-form label{
+  font-size: 1em;
+}
+
+.f-password,
+.signup-link{
+  font-size: .8em;
+}
+}
